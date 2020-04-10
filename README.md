@@ -23,7 +23,7 @@
   * Then open the terminal in the folder you want to clone the file. Run the command:
 	
 	``` 
-	git clone https://github.com/Apoorvlt/Pytest-tutorial.git
+	git clone https://github.com/Apoorvlt/Robot-Selenium-tutorial.git
   	```
   * After Clone or downloading file you need to setup Robotframework and selenium. To do this you need to open terminal in the project folder and run:
   
