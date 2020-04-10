@@ -14,20 +14,19 @@
  * To check if python installed correctly you need to go to terminal type python in command prompt. It will show you the current version you have downloaded.
  
 ### 2. LambdaTest Credentials
-  * To use Pytest with LambdaTest, make sure you have the 2 environment variables LT_USERNAME and LT_ACCESS_KEY set. To obtain a username and access_key, sign up for free [here](https://lambdatest.com). After signing up you can find your username and access key [here](https://accounts.lambdatest.com/detail/profile).
-  * In the terminal export your LambdaTest Credentials as environmental variables:
-       
-       * For Mac/Linux
-            ```
-            $ export LT_USERNAME=<your LambdaTest username>
-            $ export LT_ACCESS_KEY=<your LambdaTest access key>
-            ```
-       
-       * For Windows
-            ```
-            set LT_USERNAME=<your LambdaTest username>
-            set LT_ACCESS_KEY=<your LambdaTest access key>
-    	    ```	
+  * To obtain a username and access_key, sign up for free [here](https://lambdatest.com). After signing up you can find your username and access key [here](https://accounts.lambdatest.com/detail/profile).
+  
+  * You would need to your LambdaTest authentication credentials(Access key & Username). You need to update these credentials in the /Resources/Common.robot file.
+
+	```
+	$ ${KEY}              YOUR USERNAME:YOUR ACCESS KEY
+	EXAMPLE: ${KEY}              username:843908dfslkhfkhfhlkhdsfkl
+	```
+	```
+	$ ${KEY}              YOUR USERNAME:YOUR ACCESS KEY
+	EXAMPLE: ${KEY}              username:843908dfslkhfkhfhlkhdsfkl
+	```    	    	
+
 ### 3. Setup
 
   * You can download the file. To do this click on Clone or download button. You can download zip file.
@@ -46,4 +45,15 @@
 	```bash
     virtualenv venv
     ```
-  
+    
+## test
+
+Let’ start with a simple Selenium Remote Webdriver test first. The Robot script below tests a simple to-do application with basic functionalities like mark items as done, add items in list, calculate total pending items etc.
+
+Feature: Test to add item Scenario: Test sample-todo-app Given I go to sample-todo-app to add item Then I Click on first checkbox and second checkbox When I enter item to add When I click add button Then I should verify the added item
+
+Now, we have to create step definition file.
+
+```
+
+```
