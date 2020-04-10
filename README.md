@@ -92,3 +92,37 @@ make test_Windows_10_chrome_68
 
 ![rfst](https://github.com/Apoorvlt/test/blob/master/rfst.PNG)
 
+### Parallel Testing
+
+Parallel Testing is one of the most demanding feature of LambdaTest Selenium Grid. By parallel testing, you can run more than one test case, simultaneously. This means that, Parallel testing would allow you to execute numerous automation test cases altogether. So you execute a single test scenario across different browsers or could run different test scenarios across the same browser but with different browser versions.
+
+To perform parallel testing on LambdaTest Selenium grid use the below command.
+
+```
+make run_all_in_parallel
+```
+
+![rfpt](https://github.com/Apoorvlt/test/blob/master/rfpt.PNG)
+
+
+##  Testing Locally Hosted or Privately Hosted Projects
+
+To help you perform cross browser testing of your locally stored web pages, LambdaTest provides an SSH(Secure Shell) tunnel connection with the name Lambda Tunnel. With Lambda Tunnel, you can test your locally hosted files before you make them live over the internet. You could even perform cross browser testing from different IP addresses belonging to various geographic locations. You can also use LambdaTest Tunnel to test web-apps and websites that are permissible inside your corporate firewall.
+
+> OS specific instructions to download and setup tunnel binary can be found at the following links.
+>    - [Windows](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Windows)
+>    - [Mac](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+MacOS)
+>    - [Linux](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Linux)
+
+### Important Note:
+---
+- Some Safari & IE browsers, doesn't support automatic resolution of the URL string "localhost". Therefore if you test on URLs like "http://localhost/" or "http://localhost:8080" etc, you would get an error in these browsers. A possible solution is to use "localhost.lambdatest.com" or replace the string "localhost" with machine IP address. For example if you wanted to test "http://localhost/dashboard" or, and your machine IP is 192.168.2.6 you can instead test on "http://192.168.2.6/dashboard" or "http://localhost.lambdatest.com/dashboard".
+
+## About LambdaTest
+[LambdaTest](https://www.lambdatest.com/) is a cloud based selenium grid infrastructure that can help you run automated cross browser compatibility tests on 2000+ different browser and operating system environments. LambdaTest supports all programming languages and frameworks that are supported with Selenium, and have easy integrations with all popular CI/CD platforms. It's a perfect solution to bring your [selenium automation testing](https://www.lambdatest.com/selenium-automation) to cloud based infrastructure that not only helps you increase your test coverage over multiple desktop and mobile browsers, but also allows you to cut down your test execution time by running tests on parallel.
+
+### Resources
+
+##### [Selenium Documentation](http://www.seleniumhq.org/docs/)
+
+##### [Python Documentation](https://docs.python.org/2.7/)
