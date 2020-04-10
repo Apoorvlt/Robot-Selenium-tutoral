@@ -38,7 +38,7 @@ Here is common.robot file to setup mandatory details to run at LambdaTest.
 You would need to your LambdaTest authentication credentials(Access key & Username). You need to update these credentials in the /Resources/Common.robot file.
 
 	```
-	$ ${KEY}              YOUR USERNAME:YOUR ACCESS KEY
+	${KEY}              YOUR USERNAME:YOUR ACCESS KEY
 	EXAMPLE: ${KEY}              username:843908dfslkhfkhfhlkhdsfkl
 	```
 
