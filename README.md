@@ -89,3 +89,6 @@ You would need to execute the below command in your terminal/cmd.
 ```
 make test_Windows_10_chrome_68
 ```
+
+![rfst](https://github.com/Apoorvlt/test/blob/master/rfst.PNG)
+
