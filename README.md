@@ -12,7 +12,10 @@
  
  * To check if python installed correctly you need to go to terminal type python in command prompt. It will show you the current version you have downloaded.
  
-### 2. Setup
+### 2. LambdaTest Credentials
+  * To obtain a username and access_key, sign up for free [here](https://lambdatest.com). After signing up you can find your username and access key [here](https://accounts.lambdatest.com/detail/profile).
+  
+### 3. Setup
 
   * You can download the file. To do this click on Clone or download button. You can download zip file.
   * Then open the terminal in the folder you want to clone the file. Run the command:
@@ -20,21 +23,11 @@
 	``` 
 	git clone https://github.com/Apoorvlt/Pytest-tutorial.git
   	```
-  * After Clone or downloading file you need to setup Robotframework and selenium. To do this you need to open terminal in the project folder:
+  * After Clone or downloading file you need to setup Robotframework and selenium. To do this you need to open terminal in the project folder and run:
   
 	```bash
     pip install -r requirements.txt
     ```
-
-### 3. LambdaTest Credentials
-  * To obtain a username and access_key, sign up for free [here](https://lambdatest.com). After signing up you can find your username and access key [here](https://accounts.lambdatest.com/detail/profile).
-  
-  * You would need to your LambdaTest authentication credentials(Access key & Username). You need to update these credentials in the /Resources/Common.robot file.
-
-	```
-	$ ${KEY}              YOUR USERNAME:YOUR ACCESS KEY
-	EXAMPLE: ${KEY}              username:843908dfslkhfkhfhlkhdsfkl
-	```
 ## Getting Started With Robot & LambdaTest
 
 Let’ start with a simple Selenium Remote Webdriver test first. The Robot script below tests a simple to-do application with basic functionalities like mark items as done, add items in list, calculate total pending items etc.
