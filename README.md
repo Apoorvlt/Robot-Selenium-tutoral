@@ -2,7 +2,9 @@
 
 ![LambdaTest Logo](https://www.lambdatest.com/static/images/logo.svg)
 
+
 ![altext](https://github.com/Apoorvlt/test/blob/master/rfi.PNG)
+
 
 ## Prerequisites for Robot-Selenium-tutorial 
 
@@ -78,4 +80,12 @@ Close test browser
     ...  ${TEST_NAME} 
     ...  ${TEST_STATUS} 
     Close all browsers
+```
+### Execute The Test
+
+You would need to execute the below command in your terminal/cmd.
+
+
+```
+make test_Windows_10_chrome_68
 ```
