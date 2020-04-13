@@ -78,7 +78,7 @@ Close test browser
 ```
 
 
-Now here is the sampe test file which is to be executed for the automation test through Lambdatest
+Now here is the sample test file which is to be executed for the automation test through Lambdatest
 
 
 ```
