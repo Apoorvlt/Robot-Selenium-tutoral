@@ -76,10 +76,40 @@ Close test browser
     ...  ${TEST_STATUS} 
     Close all browsers
 ```
+
+
+Now here is the sampe test file which is to be executed for the automation test through Lambdatest
+
+
+```
+*** Settings ***
+
+Resource  ../Resources/Common.robot
+
+Test Setup  Common.Open test browser
+Test Teardown  Common.Close test browser
+ 
+*** Variables ***
+
+*** Test Cases ***
+
+Example of connecting to Lambdatest via Robot Framework 
+	[Timeout]   ${TIMEOUT}
+	Page should contain element  name:li1
+	Page should contain element  name:li2
+
+	Click button  name:li1	
+	Click button  name:li2	
+		
+	Input text  id:sampletodotext  Yey Let's add it to list
+	Click button  id:addbutton
+	${response}    Get Text    xpath=/html/body/div/div/div/ul/li[6]/span
+	Should Be Equal As Strings    ${response}    Yey Let's add it to list
+```
+
 ### Execute The Test
 
 You would need to execute the below command in your terminal/cmd.
-
 
 ```
 make test_Windows_10_chrome_68
