@@ -36,6 +36,36 @@ Let’ start with a simple Selenium Remote Webdriver test first. The Robot scrip
 
 Feature: Test to add item Scenario: Test sample-todo-app Given I go to sample-todo-app to add item Then I Click on first checkbox and second checkbox When I enter item to add When I click add button Then I should verify the added item
 
+Now here is the sample test file which is to be executed for the automation test through Lambdatest
+
+
+```
+*** Settings ***
+
+Resource  ../Resources/Common.robot
+
+Test Setup  Common.Open test browser
+Test Teardown  Common.Close test browser
+ 
+*** Variables ***
+
+*** Test Cases ***
+
+Example of connecting to Lambdatest via Robot Framework 
+	[Timeout]   ${TIMEOUT}
+	Page should contain element  name:li1
+	Page should contain element  name:li2
+
+	Click button  name:li1	
+	Click button  name:li2	
+		
+	Input text  id:sampletodotext  Yey Let's add it to list
+	Click button  id:addbutton
+	${response}    Get Text    xpath=/html/body/div/div/div/ul/li[6]/span
+	Should Be Equal As Strings    ${response}    Yey Let's add it to list
+```
+
+
 Here is common.robot file to setup mandatory details to run at LambdaTest.
 You would need to your LambdaTest authentication credentials(Access key & Username). You need to update these credentials in the /Resources/Common.robot file.
 
@@ -77,36 +107,6 @@ Close test browser
     Close all browsers
 ```
 
-
-Now here is the sample test file which is to be executed for the automation test through Lambdatest
-
-
-```
-*** Settings ***
-
-Resource  ../Resources/Common.robot
-
-Test Setup  Common.Open test browser
-Test Teardown  Common.Close test browser
- 
-*** Variables ***
-
-*** Test Cases ***
-
-Example of connecting to Lambdatest via Robot Framework 
-	[Timeout]   ${TIMEOUT}
-	Page should contain element  name:li1
-	Page should contain element  name:li2
-
-	Click button  name:li1	
-	Click button  name:li2	
-		
-	Input text  id:sampletodotext  Yey Let's add it to list
-	Click button  id:addbutton
-	${response}    Get Text    xpath=/html/body/div/div/div/ul/li[6]/span
-	Should Be Equal As Strings    ${response}    Yey Let's add it to list
-```
-
 ### Execute The Test
 
 You would need to execute the below command in your terminal/cmd.
@@ -117,7 +117,7 @@ make test_Windows_10_chrome_68
 
 ![rfst](https://github.com/Apoorvlt/test/blob/master/rfst.PNG)
 
-### Parallel Testing
+## Parallel Testing
 
 Parallel Testing is one of the most demanding feature of LambdaTest Selenium Grid. By parallel testing, you can run more than one test case, simultaneously. This means that, Parallel testing would allow you to execute numerous automation test cases altogether. So you execute a single test scenario across different browsers or could run different test scenarios across the same browser but with different browser versions. To do this we have makefile whch consists of the following:
 
