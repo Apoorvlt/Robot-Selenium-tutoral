@@ -39,11 +39,6 @@ Feature: Test to add item Scenario: Test sample-todo-app Given I go to sample-to
 Here is common.robot file to setup mandatory details to run at LambdaTest.
 You would need to your LambdaTest authentication credentials(Access key & Username). You need to update these credentials in the /Resources/Common.robot file.
 
-	```
-	${KEY}              YOUR USERNAME:YOUR ACCESS KEY
-	EXAMPLE: ${KEY}              username:843908dfslkhfkhfhlkhdsfkl
-	```
-
 ```
 *** Settings ***
 Library  Selenium2Library
@@ -62,7 +57,7 @@ Library  LambdaTestStatus.py
 
 ${BROWSER}          ${ROBOT_BROWSER}
 ${CAPABILITIES}     ${EMPTY.join(${_tmp})}
-${KEY}              YOUR USERNAME:YOUR ACCESS KEY
+${KEY}              YOUR USERNAME:YOUR ACCESS KEY  //Please specify your lambdatest username and access key here
 ${REMOTE_URL}       http://${KEY}@hub.lambdatest.com/wd/hub
 ${TIMEOUT}          3000
 
