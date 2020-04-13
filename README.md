@@ -1,4 +1,4 @@
-# Robot-Selenium-tutorial
+# Robot Selenium tutorial
 
 ![LambdaTest Logo](https://www.lambdatest.com/static/images/logo.svg)
 
@@ -6,7 +6,7 @@
 ![altext](https://github.com/Apoorvlt/test/blob/master/rfi.PNG)
 
 
-## Prerequisites for Robot-Selenium-tutorial 
+## Prerequisites for Robot Selenium tutorial 
 
 ### 1. Python Installation
 
@@ -17,13 +17,13 @@
 ### 2. LambdaTest Credentials
   * To obtain a username and access_key, sign up for free [here](https://lambdatest.com). After signing up you can find your username and access key [here](https://accounts.lambdatest.com/detail/profile).
   
-### 3. Setup
+## Setup
 
   * You can download the file. To do this click on Clone or download button. You can download zip file.
   * Then open the terminal in the folder you want to clone the file. Run the command:
 	
 	``` 
-	git clone https://github.com/Apoorvlt/Robot-Selenium-tutorial.git
+	git clone https://github.com/LambdaTest/Robot-Selenium-Sample.git
   	```
   * After Clone or downloading file you need to setup Robotframework and selenium. To do this you need to open terminal in the project folder and run:
   
