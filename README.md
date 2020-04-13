@@ -36,7 +36,7 @@ Let’ start with a simple Selenium Remote Webdriver test first. The Robot scrip
 
 Feature: Test to add item Scenario: Test sample-todo-app Given I go to sample-todo-app to add item Then I Click on first checkbox and second checkbox When I enter item to add When I click add button Then I should verify the added item
 
-Now here is the sample test file which is to be executed for the automation test through Lambdatest
+Now here is the sample test file which is to be executed for the automation test through LambdaTest
 
 
 ```
@@ -117,7 +117,7 @@ make test_Windows_10_chrome_68
 
 ![rfst](https://github.com/Apoorvlt/test/blob/master/rfst.PNG)
 
-## Parallel Testing
+## Parallel testing with Robot
 
 Parallel Testing is one of the most demanding feature of LambdaTest Selenium Grid. By parallel testing, you can run more than one test case, simultaneously. This means that, Parallel testing would allow you to execute numerous automation test cases altogether. So you execute a single test scenario across different browsers or could run different test scenarios across the same browser but with different browser versions. To do this we have makefile whch consists of the following:
 
@@ -148,14 +148,26 @@ make run_all_in_parallel
 ![rfpt](https://github.com/Apoorvlt/test/blob/master/rfpt.PNG)
 
 
+Below we see a screenshot that depicts our Robot code is running over different browsers i.e Chrome, Firefox and Safari on the LambdaTest Selenium Grid Platform. The results of the test script execution along with the logs can be accessed from the LambdaTest Automation dashboard.
+
+![rfsample](https://github.com/Apoorvlt/test/blob/master/rfsample.PNG)
+
+
 ##  Testing Locally Hosted or Privately Hosted Projects
 
 To help you perform cross browser testing of your locally stored web pages, LambdaTest provides an SSH(Secure Shell) tunnel connection with the name Lambda Tunnel. With Lambda Tunnel, you can test your locally hosted files before you make them live over the internet. You could even perform cross browser testing from different IP addresses belonging to various geographic locations. You can also use LambdaTest Tunnel to test web-apps and websites that are permissible inside your corporate firewall.
 
+* Set tunnel value to True in test capabilities
 > OS specific instructions to download and setup tunnel binary can be found at the following links.
 >    - [Windows](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Windows)
 >    - [Mac](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+MacOS)
 >    - [Linux](https://www.lambdatest.com/support/docs/display/TD/Local+Testing+For+Linux)
+
+After setting tunnel you can also see the active tunnel in our LambdaTest dashboard:
+
+
+![tn](https://github.com/Apoorvlt/test/blob/master/tn.PNG)
+
 
 ### Important Note:
 ---
