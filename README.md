@@ -5,7 +5,7 @@
 
 ![altext](https://github.com/Apoorvlt/test/blob/master/rfi.PNG)
 
-
+Robot Framework is a generic open source automation framework. It can be used for test automation and robotic process automation (RPA).
 ## Prerequisites for Robot Selenium tutorial 
 
 ### 1. Python Installation
@@ -17,7 +17,7 @@
 ### 2. LambdaTest Credentials
   * To obtain a username and access_key, sign up for free [here](https://lambdatest.com). After signing up you can find your username and access key [here](https://accounts.lambdatest.com/detail/profile).
   
-## Setup
+## Setting Up The Project For Robot Tutorial
 
   * You can download the file. To do this click on Clone or download button. You can download zip file.
   * Then open the terminal in the folder you want to clone the file. Run the command:
